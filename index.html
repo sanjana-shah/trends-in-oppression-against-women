@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trends of Oppression Against Women</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<div id="graphic">
+    <div class="container">
+        <div id="header">
+            <!--      <h1 id = "info"> </h1>-->
+            <div id="typed-strings">
+                <h1>TRIGGER WARNING: DISCUSSION OF VIOLENCE <br> <br>
+                    More than 1 in 3 women (35.6%) in the U.S. will experience rape, physical violence and/or stalking
+                    by an intimate partner in their lifetime. <br> <br>
+                    On a typical day, there are more than 20,000 phone calls placed to domestic violence hotlines
+                    nationwide.<br><br>
+                    Most cases of domestic violence are never reported to the police.
+                </h1>
+                <!--        <p>It <em>types</em> out sentences.</p>-->
+            </div>
+            <h1 id="typed" id="info"></h1>
+        </div>
+        <div id="div7" style="padding-top: 50px; padding-bottom: 50px">
+            <h2 class="textInfo">Problem Statement</h2>
+            <p class="textInfo">
+                There is an ongoing discussion about woman's right in Iran and all over the world in solidarity. While
+                these stats
+                are disheartening and hint at a larger problem, we want to explore the theory that one of the reasons
+                that fewer women speak up
+                is because women believe that they deserve it, that they deserved to be beaten up she burns the food;
+                she goes out without telling him
+                <br> <br>
+                We are in no way attempting to shift the blame to the victim. We understand the various reason why a
+                person would
+                remain in an abusive situation and are sympathic to the same. This is just a data exploration essay
+                where several men and
+                women from different countries were asked questions like "A husband is justified in hitting or beating
+                his
+                wife if she refuses to have sex with him" or "A husband is justified in hitting or beating his wife if
+                she
+                neglects the children" and are only attempting to visualize that data. We also acknowledge that <strong>the
+                problem isn't
+                only limited to women</strong>, and people of all genders can experience sexual violence, however for
+                the scope this essay,
+                we would limit our discussion to cis-women.
+
+
+                <br><br>
+                <strong>If you have been a victim of domestic abuse and are located in the US, help is available at the
+                    National Domestic Violence Hotline
+                    at 800-799-7233.</strong>
+            </p>
+            <div id="innovative-plot" class='charts' style=" width: 1200px;  margin-right: -170px">
+                <div style="font-size:12px; width: 300px; display: inline-block; height: fit-content; margin-left: -120px;margin-top: 100px; white-space: normal;">
+
+                    <br>
+                    <h5 style="text-align: center">Legend</h5>
+                    <strong>Attitudes toward violence:</strong> The percentage of women who agree that a husband/partner
+                    is justified in beating his wife/partner under certain circumstances<br>
+                    <br>
+                    Plotted using: Color scheme, darker the red, worse the attitude
+                    <br>
+                    <br>
+                    <strong>Prevalence of violence in the lifetime:</strong> The percentage of women who have experienced physical and/or
+                    sexual violence from an intimate partner at some time in their life
+                    <br>
+                    <br>
+                    Plotted using: Scatter-plot Y-axis
+                    <br>
+                    <br>
+                    <strong>Laws on domestic violence:</strong> Whether the legal framework offers women legal protection
+                    from domestic violence
+                    <br>
+                    <br>
+                    Plotted using: Size of the bubble, bigger the bubble, worse is the legal-framework
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+
+                <svg style="display: inline-block; margin-right: -170px;margin-top: -600px" id="innovative-viz" width="900px" height="600px">
+
+                </svg>
+            </div>
+        </div>
+
+        <div id="breaker" style="width: 1500px; height:100px; margin-top: 200px; margin-left: -170px; padding-top: 0px">
+            <h1 style="text-align: center; color:#000;">But really, what are the variables affecting these numbers?</h1>
+        </div>
+
+        <div id="div1" style="padding-top: 150px;">
+            <h2 style="text-align: center" class="textInfo" >Are developed countries better than developing countries?</h2>
+
+            <div style="display: inline-block; margin-left: -140px">
+            <p class="textInfo" style="width: 300px; margin-top: 100px">
+               Presenting comparison between two countries: A developed one (USA) and a developing one (India) <br>
+                Here, one can see that both the countries have the same score on how far does the legal framework offers
+                women legal protection from domestic violence. Also, both the countries score about the same on prevalence
+                of violence in the lifetime and attitudes toward violence. So while, being more developed does make women think
+                that they are less deserving or abuse, it doesn't necessarily reduce the abuse.
+            </p>
+            </div>
+            <div id="timeseries" class='charts' style=" width: 700px; height: fit-content; margin-right: -130px; display: inline-block">
+                <svg style="display: inline-block; margin-right: 30px; margin-top: -200px" id="slope-viz" width="700px" height="600px">
+                </svg>
+            </div>
+        </div>
+        <div id="div4" style="padding-top: 50px">
+            <h2 class="textInfo" style="text-align: center">How does perception affect action? </h2>
+            <div style="display: inline-block; margin-left: -100px">
+                <p class="textInfo" style="width: 300px; margin-top: 100px">
+                There's a direct correlation between how worse the violence is with how justifiable the women think that violence is.
+            </p>
+            </div>
+            <div id="scatterplot" class='charts' style=" width: 900px; margin-left: -200px; margin-right: -150px; display: inline-block">
+
+            </div>
+        </div>
+        <div id="div2" style="padding-top: 50px">
+            <h2 class="textInfo" style="text-align: center">What do men think about this?</h2>
+            <p class="textInfo">
+                This is a bar chart of the consensus on the perception of violence being justifiable by gender.
+                It appears that in all the demographics, a higher percentage of women believed that violence against them
+                is justifiable than men. There are some factors that seems to lower the consensus like age and education
+                level of the respondent.<br>
+
+            </p>
+            <div id="comparisonMW" style=" width: 1100px; height: 650px">
+
+                <div class="row"
+                     style="margin-bottom: -300px; margin-top: -30px; margin-right: 50px; margin-left: -140px">
+                    <div class="col-4" style="margin-right: 50px; margin-left: -100px">
+                        <div id="my_dataviz">
+                            <svg class="barcharts">
+
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-4" style="margin-right: 50px;">
+                        <div id="my_dataviz2">
+                            <svg class="barcharts">
+
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="my_dataviz3">
+                            <svg class="barcharts">
+
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"
+                     style="margin-bottom: -300px; margin-top: 90px; margin-right: 50px; margin-left: -140px">
+                    <div class="col-6">
+                        <div id="my_dataviz4">
+                            <svg class="barcharts">
+
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div id="my_dataviz5">
+                            <svg class="barcharts">
+
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="margin-top: 150px; color: black; margin-left: -30px; ">What is the one factor that will make women value themselves more?</h1>
+
+        <div id="div3" style="padding-top: 50px">
+            <h2 class="textInfo" style="text-align: center">Does employment actually make women value themselves more?</h2>
+            <p class="textInfo">
+                Not really, of all the countries below, regardless of their employment status, almost the same percentage of
+                the demographics picked a yes on <em>"A husband is justified in hitting or beating his wife for at least one specific reason"</em>
+
+            </p>
+
+            <div id="piecharts" class='charts'>
+                <!-- <svg style="border:1px solid black"  width="900px" height="600px">
+
+
+                </svg> -->
+                <div class="" style=" width: 1100px; height: fit-content; padding-bottom: 30px; margin-left: -60px">
+                    <div class="row" style="height: 300px; margin-top: -100px">
+                        <div id="first-div" class="col-4">
+                            <svg id="first-svg"></svg>
+                        </div>
+                        <div id="second-div" class="col-4">
+                            <svg id="second-svg"></svg>
+                        </div>
+                        <div id="third-div" class="col-4">
+                            <svg id="third-svg"></svg>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 70px">
+                        <div id="forth-div" class="col-6 ">
+                            <svg id="forth-svg"></svg>
+                        </div>
+                        <div id="fifth-div" class="col-6">
+                            <svg id="fifth-svg"></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="index1.js"></script>
+            </div>
+        </div>
+        <div id="div5" style="padding-top: 110px">
+            <h2 class="textInfo"> Why is education such a big deal? </h2>
+            <p class="textInfo">
+                Out of all the various demographics, education appears to be the largest factor on the
+                perception of violence. As the education level of the person raises, the agreement of justifiable
+                violence goes down.
+            </p>
+            <div id="educationChart" class='charts' style=" width : 1200px; height: fit-content;margin-left: -50px; ">
+                <svg id="parallelCoordinates" width="1200px" height="600px">
+
+
+                </svg>
+            </div>
+        </div>
+        <div id="div6" style="padding-top: 100px">
+            <h2 class="textInfo"> How are other countries doing in this? </h2>
+            <p class="textInfo" style="width: 1100px">
+                Using this interactive graph, we are able to set certain questions, demographic, and country
+                to see how the respondent are compared to the other sub-demographics when it comes to their
+                perception of justifiable violence. We found that education level seems to be the biggest
+                and most consistent factor. The higher the education, the higher chance that they will not
+                agree to the violence being justified no matter the question.
+            <div id="gigachart" class='charts' style=" width: 1200px; height: fit-content; margin-left: -50px; ">
+                <div id="question-selector-container" style="width: 1100px; height: 70px" class="row">
+                    <label for="question-selector">Question</label>
+                    <select class="form-select" aria-label="select question" id="question-selector"
+                            onchange="drawLolliPopChart()">
+                        <option value="... if she burns the food">If she burns the food</option>
+                        <option value="... if she goes out without telling him">If she goes out without telling him
+                        </option>
+                        <option value="... if she neglects the children">If she neglects the children</option>
+                        <option value="... if she refuses to have sex with him">If she refuses to have sex with him
+                        </option>
+                        <option value="... if she argues with him">If she argues with him</option>
+                        <option value="... for at least one specific reason">For at least one specific reason</option>
+                    </select>
+
+                </div>
+
+
+                <hr style="width: 1000px">
+
+                <div id="demographic-selector-container" style="width: 1100px; height: 70px" class="row">
+                    <label for="demographic-selector">Demographic</label>
+                    <select class="form-select" aria-label="select demographic" id="demographic-selector"
+                            onchange="drawLolliPopChart()">
+                        <option value="Age">Age</option>
+                        <option value="Marital status">Marital status</option>
+                        <option value="Education">Education level</option>
+                        <option value="Employment">Employment status</option>
+                        <option value="Residence">Residence type</option>
+                    </select>
+                </div>
+                <hr style="width: 1000px">
+
+                <div id="country-selector-container" class=""
+                     style=" width: 1100px; height: 150px; padding-bottom: 30px">
+                    <label for="country-selector">Countries</label>
+                    <div id="country-selector" class="row border rounded p-3 overflow-auto"
+                         style="border-color: rgb(206, 212, 218);background-color: white ; ">
+                    </div>
+                </div>
+                <hr style="width: 1000px">
+                <div id="gigagraph-visualization">
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script>
+    new scroll('header', '75%', type, placeholderFunctionUp);
+    new scroll('div1', '75%', grid, grid2);
+    new scroll('div2', '75%', placeholderFunctionDown, placeholderFunctionUp);
+
+
+</script>
+</html>
